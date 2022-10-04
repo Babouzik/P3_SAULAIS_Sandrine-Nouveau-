@@ -1,0 +1,528 @@
+/* Reset CSS */
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Corps de la page */
+
+  .conteneur-en-tete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  
+  .icone {
+    margin-left: 5%;
+    z-index: 1000;
+  }
+
+  .icone a {
+    color: grey;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 20px;
+    margin-left: -5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }  
+
+  .image-menu2 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+  }
+
+  /* Menu La palette du goût Entrées + Plats + Desserts */
+  
+  /* Titre */
+
+  .conteneur-titre {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background-color: #efefef;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    margin-top: -40px;
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+
+  .menu2-titre {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .menu2-titre h1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    
+        
+  }
+
+  .coeur {
+    width: 35px;
+    height: 35px;
+    padding-top: 80px;
+    position: relative;
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 52px;
+    
+  }
+
+  .coeur i {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .coeur .coeurvide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    z-index: 1;
+    color: gray; 
+  }
+  
+  .coeur .coeurplein {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: -8px;
+    margin-top: -8px;
+    padding: 0;
+    z-index: 2;
+    background: linear-gradient(120deg,#FF79DA 0%,#9356DC 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    
+  }  
+  
+  .coeur .coeurplein:hover {
+    transition: 2s;
+    opacity: 1;
+    
+  }
+
+  .conteneur-menus {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background-color: #efefef;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+  }
+
+  .conteneur-menus h3 {
+    padding-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    border-bottom-style: solid;
+    border-color: #99E2D0;
+    width: 10%;
+    
+  }
+
+  .conteneur-menus h4 {
+    margin-left: 13px;
+    line-height: 2;
+    font-size: 16px;
+    padding-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: black;
+  }
+
+
+  .conteneur-menus p {
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 2;
+  }
+
+  .tarif p {
+    float: right;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  .conteneur-type-plat {
+    
+    width: 355px;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    animation: fadein 2.2s;
+    -webkit-animation: fadein 2.2s;
+
+  }
+  .conteneur-type-plat:first-child {
+    animation: fadein 1.2s;
+    -webkit-animation: fadein 1.2s;
+  }
+  
+  .conteneur-type-plat:last-child {
+    animation: fadein 3.2s;
+    -webkit-animation: fadein 3.2s;
+  }
+
+  .conteneur-type-plat .menu {
+    flex: 1;
+    height: auto;
+    
+  }
+  
+  @keyframes fadein { 
+  from {
+    opacity: 0;
+  }
+  to   {
+    opacity: 1;
+  }
+  }
+
+  .validation {
+  width: 0;
+  height: auto;
+  color: #99E2D0;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transition: 2s;
+  
+  }  
+ 
+
+  .conteneur-icon  {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    
+  }
+
+  .conteneur-icon i {
+    transition: transform 700ms;
+  }
+
+  .conteneur-type-plat .validation {
+    transition: transform 330ms ease-in-out;
+    opacity: 0;
+  }
+
+  .conteneur-type-plat .validation .conteneur-icon .i {
+    transition: transform 330ms ease-in-out;
+    opacity: 0;
+  }
+
+  .conteneur-type-plat:hover .validation {
+    transform: scale(1);
+    opacity: 1;
+    width: 60px;
+    height: auto;
+    color: #99E2D0;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    transition: 1s;
+  } 
+
+  .conteneur-type-plat:hover .conteneur-icon i {
+    transform: rotate(359deg);
+    
+  }
+
+  /* Bouton */
+
+  .bouton {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    background-color: #efefef;
+  }
+
+  .bouton a {
+    width: 60%;
+    max-width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: none solid;
+    border-radius: 30px;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+
+  .bouton a:hover {
+    box-shadow: 1px 10px 8px rgb(130 130 130 / 90%);
+    opacity: 0.7;
+
+  }
+
+  /* Pied de page */
+
+.conteneur-footer {
+    width: 100%;
+    height: 250px;
+    background-color: dimgray;
+
+}
+
+.conteneur-logo {
+    width: 70%;
+    height: 20px;
+    padding-top: 25px;
+}
+
+.logo-footer {
+    font-family: 'Shrikhand';
+    font-style: oblique;
+    font-size: small;
+    color: white;
+    margin-left: 22px;
+}
+
+.conteneur-proposer-un-restaurant {
+    width: 90%;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+
+.conteneur-icone-1 {
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    
+} 
+
+.conteneur-icone-1 i {
+    color: white;
+}
+
+.conteneur-texte-1 {
+    margin-left: 30px;
+    
+}
+
+.conteneur-texte-1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.conteneur-devenir-partenaire {
+    width: 90%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+.conteneur-icone-2 {
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+}
+
+.conteneur-icone-2 i {
+    color: white;
+}
+
+.conteneur-texte-2 {
+    margin-left: 30px;
+}
+
+.conteneur-texte-2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.conteneur-mentions-legales {
+    padding-top: 30px;
+    margin-left: 22px;
+}
+
+.conteneur-mentions-legales a {
+    color: white;
+    text-decoration: none;
+}
+
+.conteneur-contact {
+    padding-top: 10px;
+    margin-left: 22px;
+}
+
+.conteneur-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+
+  .conteneur-titre {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+
+  .menu2-titre h1 {
+    padding-left: 70px;
+  }
+
+  .coeur {
+    margin-right: 70px;
+  }
+
+  .conteneur-menus {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .conteneur-type-plat {
+    width: 700px;
+    
+}    
+
+  .conteneur-menus h3 {
+    width: 8%;
+    
+  }
+
+  .conteneur-menus h4 {
+    font-size: 18px;
+
+}
+
+  .conteneur-menus p {
+    font-size: 16px;
+  }
+  
+  .bouton {
+    background-color: white;
+    padding-bottom: 70px;
+  }
+
+  .bouton a {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width:1626px) {
+
+
+  .coeur {
+    margin-right: 70px;
+  }
+
+  .conteneur-menus {
+    flex-direction: row;
+    
+  }
+
+  .conteneur-type-plat {
+    
+    width: 500px;
+    margin-left: 30px;
+}    
+
+  .conteneur-menus h3 {
+    width: 8%;
+    margin-left: 30px;
+  }
+
+  .conteneur-menus h4 {
+    font-size: 18px;
+
+}
+
+  .conteneur-menus p {
+    font-size: 16px;
+  }
+  
+
+
+
+
+}
