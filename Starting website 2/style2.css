@@ -11,6 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    padding-left: 30px;
 }
 a:hover {
     text-decoration: none;
@@ -43,9 +44,12 @@ a:hover {
     padding-right: 0;
 }
 
+.bloc.bg-dots-bg {
+    background-image: url("img/agence-la-panthere.webp");
+}
+
 .bloc-lg {
     padding: 100px 50px;
-    display: flex;
     justify-content: center;
 }
 
@@ -295,6 +299,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
+    padding-bottom: 25px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -304,6 +309,7 @@ a:hover {
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
+    margin-top: 20px;
     display: inline;
 }
 
@@ -317,7 +323,7 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    margin-top: -1px;
     float: right;
     z-index: 1;
 }
@@ -340,6 +346,7 @@ a:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    display: none;
 }
 
 .navbar-toggle:hover {
@@ -349,6 +356,11 @@ a:hover {
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
+}
+
+.navbar-collapse.collapse {
+    display: block;
+   
 }
 
 .nav-invert .navbar .nav {
@@ -361,6 +373,15 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
+textarea .form-control {
+    height: auto;
+}
+
+#form_1 {
+    width: 50%;
+}
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -402,10 +423,11 @@ a:hover {
         margin: 10px auto 0;
     }
 
-    .navbar-toggle {
-        display: none;
-    }
 
+}
+
+.text-center {
+    text-align: center;
 }
 
 .nav > li > .dropdown a {
@@ -482,11 +504,12 @@ button {
 
 .col-sm-12  h2 {
     margin-bottom: 40px;
-   
+    
 }
 
 .icon-md {
     font-size: 30px!important;
+    color: #ccc;
 }
 
 .icon-lg {
@@ -515,18 +538,18 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+#form_1 {
+    width: 300px;
+}
+
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
-    display:flex ;
-    flex-direction: column;
-    height: 34px;
-    max-width: 500px;
+    display: block ;
+    height: 32px;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: solid 2px rgba(0, 0, 0, .4);
+    border: solid 1px #ccc;
     box-shadow: 0 1px 3px rgb(0 0 1 / 25%), inset 0 1px 0 0 rgb(255 255 255 / 15%);
 }
 
@@ -713,9 +736,13 @@ a {
 }
 
 p {
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
+    font-size: 16px;
+    
+}
+
+.col-sm-6 {
+    width: 50%;
+    
 }
 
 .col-sm-6 p {
@@ -727,8 +754,15 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
-    color: #FFFFFF;
+    margin: auto;
+    
+}
+
+.col-sm-12 p {
+    color: #FFFFFF !important;
+    font-size: 18px;
+    margin-top: -10px;
+    padding-bottom: 30px;
 }
 
 .h1 {
@@ -744,18 +778,23 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    
 }
 
 .social {
-    max-width: 400px;
+    max-width: 300px;
     margin: auto auto auto auto;
-    margin-top: 25px;
-    
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
  
 h2 {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 1.4em;
+    
 }
 
 h3 {
@@ -790,6 +829,13 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-row {
@@ -812,7 +858,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF
 }
 
 .bgc-dark-slate-blue {
@@ -820,8 +866,9 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-image: url("img/agence-la-panthere.webp");
+    background-color: #F3976C;
 }
+
 
 .tc-white {
     color: #F3976C!important;
@@ -832,10 +879,10 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
-    width: 100%;
-    border-radius: 4px;
+    border-radius: 40px;
     border: none;
     box-shadow: 0 1px 3px rgb(0 0 1 / 25%), inset 0 1px 0 0 rgb(255 255 255 / 15%);
+    
 }
 
 .btn-atomic-tangerine:hover {
@@ -1059,6 +1106,7 @@ h4 {
     }
     form {
         padding: 5px;
+        margin-left: 10px;
     }
     .close-lightbox {
         display: inline-block;
@@ -1085,5 +1133,9 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .form-control {
+        width: auto;
     }
 }
