@@ -11,7 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
-    padding-left: 30px;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: none;
@@ -50,7 +50,7 @@ a:hover {
 
 .bloc-lg {
     padding: 100px 50px;
-    justify-content: center;
+   
 }
 
 .bloc-md {
@@ -59,6 +59,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+    display: contents;
 }
 
 .bg-center,
@@ -326,6 +327,7 @@ a:hover {
     margin-top: -1px;
     float: right;
     z-index: 1;
+    padding: auto;
 }
 
 .nav > li {
@@ -387,7 +389,7 @@ textarea .form-control {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 70px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -509,7 +511,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
-    color: #ccc;
+    
 }
 
 .icon-lg {
@@ -708,7 +710,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: auto;
     
 }
 
@@ -755,14 +757,16 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto;
-    
+        
 }
+
 
 .col-sm-12 p {
     color: #FFFFFF !important;
     font-size: 18px;
     margin-top: -10px;
     padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 .h1 {
@@ -782,7 +786,7 @@ p {
 }
 
 .social {
-    max-width: 300px;
+    max-width: 500px;
     margin: auto auto auto auto;
     flex-direction: row;
     display: flex;
